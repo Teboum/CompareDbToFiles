@@ -17,7 +17,9 @@
       <th>Entrée Fichier</th>
       <th>Entrée BDD</th>
     </tr>
-    <% for(let individu of data){if(true){ %>
+    <% for(let individu of
+    data){if(individu.dateNaissanceFichier!=individu.dateNaissanceDB||individu.dateEntreeFichier!=individu.dateEntreeDB){
+    %>
     <tr>
       <td><%= individu.idFoyer %></td>
       <td><%= individu.idIndividu %></td>

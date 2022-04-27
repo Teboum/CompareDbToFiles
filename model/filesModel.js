@@ -60,6 +60,7 @@ exports.csvParse = (file) => {
                       ...response[index],
                       idIndividu: result[e],
                       idFoyer: result.IDFOYER,
+                      dateEntreeFichier: "",
                     };
                     index++;
                   }
