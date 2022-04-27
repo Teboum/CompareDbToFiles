@@ -36,7 +36,14 @@ exports.mainController = (req, res, next) => {
 };
 
 exports.xmlToCsvController = (req, res, next) => {
-  XMLParse(req.query.xml).then((obj) => {
-    return objToCsv(obj, req.query.xml);
-  });
+  XMLParse(req.query.xml)
+    .then((obj) => {
+      return objToCsv(obj, req.query.xml);
+    })
+    .then((obj) => {
+      console.log(obj);
+      res.render("csv", {
+        csv: obj,
+      });
+    });
 };

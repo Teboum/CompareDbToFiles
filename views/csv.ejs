@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <% if(csv.length!==0){ %>
+  <table class="tableau">
+    <tr>
+      <th>IdFoyer</th>
+      <th>idIndividu</th>
+      <th>Naissance Fichier</th>
+      <th>Entrée Fichier</th>
+    </tr>
+    <% for(let individu of csv){if(true){ %>
+    <tr>
+      <td><%= individu.idFoyer %></td>
+      <td><%= individu.idIndividu %></td>
+      <td><%= individu.dateNaissanceFichier %></td>
+      <td><%= individu.dateEntreeFichier?individu.dateEntreeFichier:"" %></td>
+    </tr>
+    <%}}%>
+  </table>
+  <% } %>
+</html>

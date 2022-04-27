@@ -138,24 +138,31 @@ exports.XMLParse = (file) => {
 };
 
 exports.objToCsv = (obj, csvName) => {
-  (async () => {
-    const csv = new ObjectsToCsv(obj);
-    await fs.closeSync(fs.openSync("./statics/" + csvName + ".csv", "w"));
-    await csv.toDisk("./statics/" + csvName + ".csv");
-    fs.readFile("./statics/" + csvName + ".csv", "utf8", function (err, data) {
-      if (err) {
-        return console.log(err);
-      }
-      var result = data.replace(/,/g, ";");
-
-      fs.writeFile(
+  return new Promise((resolve, reject) => {
+    (async () => {
+      const csv = new ObjectsToCsv(obj);
+      await fs.closeSync(fs.openSync("./statics/" + csvName + ".csv", "w"));
+      await csv.toDisk("./statics/" + csvName + ".csv");
+      fs.readFile(
         "./statics/" + csvName + ".csv",
-        result,
         "utf8",
-        function (err) {
-          if (err) return console.log(err);
+        function (err, data) {
+          if (err) {
+            reject(err);
+          }
+          var result = data.replace(/,/g, ";");
+
+          fs.writeFile(
+            "./statics/" + csvName + ".csv",
+            result,
+            "utf8",
+            function (err) {
+              if (err) reject(err);
+              resolve(obj);
+            }
+          );
         }
       );
-    });
-  })();
+    })();
+  });
 };
