@@ -1,0 +1,10 @@
+1-Comparaison BDD aux fichiers :
+	-Dans le fichier DBModel.js du dossier model (model/DBModel.js) changer DB_URL par le lien de la BDD Opérationnelle
+	-Copier les fichiers .xml et .csv dans le dossier statics
+	-Lancer le serveur NodeJs en ligne de commande a partir du répertoire du projet avec la commande npm start
+	-A partir du navigateur lancer le lien localhost:/main?xml=nomDuFichierXML&csv=nomDuFichierCSV
+
+2-Convertir les données necessaire du fichier XML en CSV:
+	-Copier le Fichier XML dans le repertoire statics
+	-Lancer le lien localhost:3000/main/xmltocsv?xml=NomDuFichierXML
+	-le fichier .csv sera générer dans le dossier statics et les données afficher dans un tableau dans la page

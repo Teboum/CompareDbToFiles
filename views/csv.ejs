@@ -15,14 +15,14 @@
       <th>Naissance Fichier</th>
       <th>Entrée Fichier</th>
     </tr>
-    <% for(let individu of csv){if(true){ %>
+    <% for(let individu of csv) %>
     <tr>
       <td><%= individu.idFoyer %></td>
       <td><%= individu.idIndividu %></td>
       <td><%= individu.dateNaissanceFichier %></td>
       <td><%= individu.dateEntreeFichier?individu.dateEntreeFichier:"" %></td>
     </tr>
-    <%}}%>
+    <%}%>
   </table>
   <% } %>
 </html>
