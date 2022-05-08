@@ -6,27 +6,28 @@
     <title>Main</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
-  <% if(data.length!==0){ %>
-  <table class="tableau">
-    <tr>
-      <th>IdFoyer</th>
-      <th>idIndividu</th>
-      <th>Naissance Fichier</th>
-      <th>Naissance BDD</th>
-      <th>Entrée Fichier</th>
-      <th>Entrée BDD</th>
-    </tr>
-    <% for(let individu of data){ %>
-    <tr>
-      <td><%= individu.idFoyer %></td>
-      <td><%= individu.idIndividu %></td>
-      <td><%= individu.dateNaissanceFichier %></td>
-      <td><%= individu.dateNaissanceDB %></td>
-      <td><%= individu.dateEntreeFichier %></td>
-      <td><%= individu.dateEntreeDB %></td>
-    </tr>
-    <%}%>
-  </table>
-  <% } %>
+  <body>
+    <% if(data.length!==0){ %>
+    <table class="tableau">
+      <tr>
+        <th>IdFoyer</th>
+        <th>idIndividu</th>
+        <th>Naissance Fichier</th>
+        <th>Naissance BDD</th>
+        <th>Entrée Fichier</th>
+        <th>Entrée BDD</th>
+      </tr>
+      <% for(let individu of data){ %>
+      <tr>
+        <td><%= individu.idFoyer %></td>
+        <td><%= individu.idIndividu %></td>
+        <td><%= individu.dateNaissanceFichier %></td>
+        <td><%= individu.dateNaissanceDB %></td>
+        <td><%= individu.dateEntreeFichier %></td>
+        <td><%= individu.dateEntreeDB %></td>
+      </tr>
+      <%}%>
+    </table>
+    <% } %>
+  </body>
 </html>
