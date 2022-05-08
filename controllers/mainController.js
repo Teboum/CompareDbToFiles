@@ -1,16 +1,13 @@
 const { getInfoIndividu } = require("../model/dbModel");
 const { csvParse, XMLParse, objToCsv } = require("../model/filesModel");
+const { jsonParse } = require("../model/jsonModel");
 
 exports.mainController = (req, res, next) => {
   var data = [];
-  csvParse(req.query.csv)
+  XMLParse(req.query.xml)
     .then((result) => {
       data = result;
-      return XMLParse(req.query.xml);
-    })
-    .then((result) => {
-      data = data.concat(result);
-      return getInfoIndividu();
+      return jsonParse(req.query.json);
     })
     .then((result) => {
       result.forEach((element, i) => {
@@ -25,13 +22,17 @@ exports.mainController = (req, res, next) => {
             dateNaissanceDB: element.dateNaissanceDB,
           };
         } else {
+          console.log("elem", element);
           data.push(element);
         }
       });
-      if (req.query.id) res.json({ test: "test" });
-      else {
-        res.render("mainList", { data: data });
-      }
+      res.render("mainList", {
+        data: data.filter(
+          (e) =>
+            e.dateNaissanceFichier != e.dateNaissanceDB ||
+            e.dateEntreeFichier != e.dateEntreeDB
+        ),
+      });
     });
 };
 

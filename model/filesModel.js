@@ -39,14 +39,17 @@ exports.csvParse = (file) => {
                 keys.forEach((e, i) => {
                   if (e.includes("naiss_jour_I") && result[e]) {
                     response[index] = {
-                      dateNaissanceFichier: result[e],
+                      dateNaissanceFichier:
+                        +result[e] < 10 ? "0" + result[e] : result[e],
                     };
                   }
 
                   if (e.includes("naiss_mois_I") && result[e]) {
                     response[index] = {
                       dateNaissanceFichier:
-                        response[index].dateNaissanceFichier + "-" + result[e],
+                        response[index].dateNaissanceFichier +
+                        "-" +
+                        (+result[e] < 10 ? "0" + result[e] : result[e]),
                     };
                   }
                   if (e.includes("naiss_année_I") && result[e]) {

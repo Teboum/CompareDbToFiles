@@ -17,18 +17,16 @@
       <th>Entrée Fichier</th>
       <th>Entrée BDD</th>
     </tr>
-    <% for(let individu of
-    data){if(individu.dateNaissanceFichier!=individu.dateNaissanceDB||individu.dateEntreeFichier!=individu.dateEntreeDB){
-    %>
+    <% for(let individu of data){ %>
     <tr>
       <td><%= individu.idFoyer %></td>
       <td><%= individu.idIndividu %></td>
       <td><%= individu.dateNaissanceFichier %></td>
       <td><%= individu.dateNaissanceDB %></td>
-      <td><%= individu.dateEntreeFichier?individu.dateEntreeFichier:"" %></td>
-      <td><%= individu.dateEntreeFichier?individu.dateEntreeDB:"" %></td>
+      <td><%= individu.dateEntreeFichier %></td>
+      <td><%= individu.dateEntreeDB %></td>
     </tr>
-    <%}}%>
+    <%}%>
   </table>
   <% } %>
 </html>

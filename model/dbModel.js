@@ -720,7 +720,6 @@ exports.getInfoIndividu = () => {
           e.individu.forEach((elem, index) => {
             var dateEntree = elem.audience.dateEntree;
             var dateNaissance = elem.infoPerso.dateNaissance;
-
             if (dateEntree.getHours() >= 22) {
               dateEntree.setDate(dateEntree.getDate() + 1);
             }

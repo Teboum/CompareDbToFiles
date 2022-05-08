@@ -1,0 +1,367 @@
+{
+    "_id" : ObjectId("5406c490e4b0aef080ba2a5c"),
+    "uuid" : "67789863-36d2-48e4-986c-312a51380941",
+    "_version" : 71,
+    "idFoyer" : 91,
+    "coordonnees" : {
+        "telephoneFoyer" : "0123456789",
+        "rue" : "Rue_91",
+        "codePostal" : "92300",
+        "digicode" : "",
+        "complementAdresse" : "",
+        "ville" : "LEVALLOIS-PERRET",
+        "telephoneTravail" : ""
+    },
+    "device" : [],
+    "disponibilites" : "",
+    "foyerEquipement" : {
+        "connexionTelephonique" : 4,
+        "possedeJardin" : false,
+        "typeConnexionInternet" : 0,
+        "routeurMmat" : false,
+        "switch" : false,
+        "nonEquipeTv" : false
+    },
+    "individu" : [ 
+        {
+            "uuid" : "ae96a655-e654-4814-ad4a-621b9f19c357",
+            "audience" : {
+                "lettreTelecommande" : "A",
+                "dateEntree" : ISODate("2009-12-23T01:00:00.000+02:00"),
+                "grosConsommateur" : false,
+                "presencePermanente" : true,
+                "membreFoyer" : 1
+            },
+            "experiencePro" : {
+                "domaineActivite" : "",
+                "profession" : "",
+                "tempsPlein" : false,
+                "autreActivite" : ""
+            },
+            "habitudes" : {},
+            "idIndividu" : 53511533,
+            "idIndividuMediametrie" : 1,
+            "infoPerso" : {
+                "prenom" : "prenom_0_91",
+                "lienParenteStat" : 1,
+                "dateNaissance" : ISODate("1900-01-01T01:50:39.000+02:00"),
+                "lienParente" : 1,
+                "email" : "",
+                "sexe" : 1,
+                "telephonePortable" : "",
+                "nom" : "nom_0_91"
+            },
+            "scolarite" : {},
+            "statut" : {
+                "idStatut" : 1
+            },
+            "proprietes" : {
+                "toAnonymize" : false,
+                "anonymized" : true,
+                "anonymizationDate" : ISODate("2017-11-28T01:00:00.000+02:00")
+            },
+            "dateDerniereModification" : ISODate("2022-02-01T02:00:00.000+02:00")
+        }, 
+        {
+            "uuid" : "d25a44de-779f-48fa-b7b2-2d7d14e0cd75",
+            "audience" : {
+                "lettreTelecommande" : "B",
+                "dateEntree" : ISODate("2009-12-23T01:00:00.000+02:00"),
+                "grosConsommateur" : false,
+                "presencePermanente" : true,
+                "membreFoyer" : 1
+            },
+            "experiencePro" : {
+                "domaineActivite" : "",
+                "profession" : "",
+                "tempsPlein" : false,
+                "autreActivite" : ""
+            },
+            "habitudes" : {},
+            "idIndividu" : 53511534,
+            "idIndividuMediametrie" : 2,
+            "infoPerso" : {
+                "prenom" : "prenom_1_91",
+                "lienParenteStat" : 1,
+                "dateNaissance" : ISODate("1900-01-01T01:50:39.000+02:00"),
+                "lienParente" : 2,
+                "email" : "",
+                "sexe" : 2,
+                "telephonePortable" : "",
+                "nom" : "nom_1_91"
+            },
+            "scolarite" : {},
+            "statut" : {
+                "idStatut" : 1
+            },
+            "proprietes" : {
+                "toAnonymize" : false,
+                "anonymized" : true,
+                "anonymizationDate" : ISODate("2017-11-28T01:00:00.000+02:00")
+            },
+            "dateDerniereModification" : ISODate("2022-02-01T02:00:00.000+02:00")
+        }, 
+        {
+            "uuid" : "d0d6cbfb-7ae0-49f9-8ae3-f248ba489846",
+            "audience" : {
+                "lettreTelecommande" : "C",
+                "dateEntree" : ISODate("2009-12-23T01:00:00.000+02:00"),
+                "grosConsommateur" : false,
+                "presencePermanente" : true,
+                "membreFoyer" : 1
+            },
+            "experiencePro" : {
+                "domaineActivite" : "",
+                "profession" : "",
+                "tempsPlein" : false,
+                "autreActivite" : ""
+            },
+            "habitudes" : {},
+            "idIndividu" : 53511535,
+            "idIndividuMediametrie" : 3,
+            "infoPerso" : {
+                "prenom" : "prenom_2_91",
+                "dateNaissance" : ISODate("1900-01-01T01:50:39.000+02:00"),
+                "lienParente" : 3,
+                "email" : "",
+                "sexe" : 1,
+                "telephonePortable" : "",
+                "nom" : "nom_2_91"
+            },
+            "scolarite" : {},
+            "statut" : {
+                "idStatut" : 1
+            },
+            "proprietes" : {
+                "toAnonymize" : false,
+                "anonymized" : true,
+                "anonymizationDate" : ISODate("2017-11-28T01:00:00.000+02:00")
+            },
+            "dateDerniereModification" : ISODate("2022-02-01T02:00:00.000+02:00")
+        }, 
+        {
+            "uuid" : "4b0885f3-52ca-4fea-a51e-0ccdd6ed5af8",
+            "audience" : {
+                "lettreTelecommande" : "D",
+                "dateEntree" : ISODate("2009-12-23T01:00:00.000+02:00"),
+                "grosConsommateur" : false,
+                "presencePermanente" : false,
+                "membreFoyer" : 0
+            },
+            "experiencePro" : {
+                "domaineActivite" : "",
+                "profession" : "",
+                "tempsPlein" : false,
+                "autreActivite" : ""
+            },
+            "habitudes" : {},
+            "idIndividu" : 53511536,
+            "idIndividuMediametrie" : 4,
+            "infoPerso" : {
+                "prenom" : "prenom_3_91",
+                "dateNaissance" : ISODate("1900-01-01T01:50:39.000+02:00"),
+                "lienParente" : 5,
+                "email" : "",
+                "sexe" : 2,
+                "telephonePortable" : "",
+                "nom" : "nom_3_91"
+            },
+            "scolarite" : {},
+            "statut" : {
+                "idStatut" : 1
+            },
+            "proprietes" : {
+                "toAnonymize" : false,
+                "anonymized" : true,
+                "anonymizationDate" : ISODate("2017-11-28T01:00:00.000+02:00")
+            },
+            "dateDerniereModification" : ISODate("2022-02-01T02:00:00.000+02:00")
+        }, 
+        {
+            "uuid" : "6920d515-2d69-4632-8aac-abb5f7bb29cf",
+            "audience" : {
+                "lettreTelecommande" : "H",
+                "dateEntree" : ISODate("2022-03-10T01:00:00.000+02:00"),
+                "presencePermanente" : false,
+                "membreFoyer" : 1
+            },
+            "experiencePro" : {
+                "tempsPlein" : false
+            },
+            "habitudes" : {},
+            "idIndividu" : 100111310,
+            "idIndividuMediametrie" : 5,
+            "infoPerso" : {
+                "prenom" : "Hélène",
+                "lienParenteStat" : 1,
+                "dateNaissance" : ISODate("1999-07-01T00:00:00.000+02:00"),
+                "lienParente" : 1,
+                "sexe" : 2,
+                "nom" : "INDIVIDUQUATREMMAT"
+            },
+            "statut" : {
+                "idStatut" : 1
+            },
+            "proprietes" : {},
+            "dateDerniereModification" : ISODate("2022-03-10T13:08:27.007+02:00")
+        }
+    ],
+    "noFoyerMediametrie" : 460,
+    "operateur" : "D",
+    "peripheriques" : [],
+    "poste" : [ 
+        {
+            "uuid" : "370148a8-a77e-47e9-845b-aef1f35ef84f",
+            "audienceHd" : false,
+            "audimetre" : {
+                "priseSon" : 3,
+                "idTypeModem" : 5,
+                "convertisseurCia" : false,
+                "idAudimetre" : 159792,
+                "dateDerniereModification" : ISODate("2022-03-04T19:12:57.363+02:00")
+            },
+            "autreUsage" : false,
+            "dateHorsTension" : ISODate("2022-03-04T19:12:57.423+02:00"),
+            "decodeurs" : [ 
+                {
+                    "idTypeConnectique" : 2,
+                    "disqueDur" : false,
+                    "idTypeDecodeur" : 1,
+                    "idFournisseur" : 1,
+                    "capaciteHd" : true,
+                    "idReceptionMode" : 1
+                }
+            ],
+            "equipement" : {
+                "disqueDurIntegre" : false,
+                "ordinateur" : false,
+                "lecteurDvdHD" : false,
+                "lecteurDvdTnt" : false,
+                "combineDvdMag" : false,
+                "consoleConnecteeInternet" : false,
+                "dvdEnregistreurDD" : false,
+                "telephonieAdsl" : false,
+                "hdBluRay" : false,
+                "camescope" : false,
+                "transmetteurVideo" : false,
+                "equipeMagnetoscope" : false,
+                "disqueDurExterne" : false,
+                "equipeDvd" : false,
+                "dvdEnregistreur" : false,
+                "lecteurDvdIntegre" : false,
+                "recepteurWifi" : false,
+                "adaptateurCplWifi" : false
+            },
+            "horsTension" : false,
+            "idLocalisationPoste" : 2,
+            "numPoste" : 0,
+            "television" : {
+                "connectableInternet" : false,
+                "modele" : "fg",
+                "tvHd" : false,
+                "idTelevision" : 2012742,
+                "equipeEcran3D" : false,
+                "dateMiseEnService" : 2000,
+                "seizeNeuvieme" : false,
+                "idMarqueTelevisionMag" : 1114,
+                "videoProjecteur" : false,
+                "disqueDurIntegre" : false,
+                "portUSB" : false,
+                "tntIntegre" : false,
+                "homeCinema" : false,
+                "combiTVDvd" : false,
+                "idFrequenceUtilisation" : 2,
+                "connecteInternet" : false,
+                "ecranPlat" : false,
+                "videoRetroProjecteur" : false
+            },
+            "dateDerniereModification" : ISODate("2022-03-04T19:12:57.425+02:00")
+        }, 
+        {
+            "uuid" : "31ec5838-1836-4324-9499-53baa1961d1d",
+            "audienceHd" : false,
+            "audimetre" : {
+                "priseSon" : 3,
+                "idTypeModem" : 5,
+                "convertisseurCia" : false,
+                "idAudimetre" : 159272,
+                "dateDerniereModification" : ISODate("2022-03-04T19:13:20.338+02:00")
+            },
+            "autreUsage" : false,
+            "dateHorsTension" : ISODate("2022-03-04T19:13:20.423+02:00"),
+            "decodeurs" : [ 
+                {
+                    "idTypeConnectique" : 1,
+                    "idTypeDecodeur" : 2,
+                    "idFournisseur" : 1,
+                    "capaciteHd" : true,
+                    "idReceptionMode" : 1
+                }
+            ],
+            "equipement" : {
+                "disqueDurIntegre" : false,
+                "ordinateur" : false,
+                "lecteurDvdHD" : false,
+                "lecteurDvdTnt" : false,
+                "combineDvdMag" : false,
+                "consoleConnecteeInternet" : false,
+                "dvdEnregistreurDD" : false,
+                "telephonieAdsl" : false,
+                "hdBluRay" : false,
+                "camescope" : false,
+                "transmetteurVideo" : false,
+                "equipeMagnetoscope" : false,
+                "disqueDurExterne" : false,
+                "equipeDvd" : false,
+                "dvdEnregistreur" : false,
+                "lecteurDvdIntegre" : false,
+                "recepteurWifi" : false,
+                "adaptateurCplWifi" : false
+            },
+            "horsTension" : false,
+            "idLocalisationPoste" : 1,
+            "numPoste" : 1,
+            "television" : {
+                "connectableInternet" : false,
+                "modele" : "f",
+                "tvHd" : false,
+                "idTelevision" : 2014032,
+                "equipeEcran3D" : false,
+                "dateMiseEnService" : 2000,
+                "seizeNeuvieme" : false,
+                "idMarqueTelevisionMag" : 1212,
+                "videoProjecteur" : false,
+                "disqueDurIntegre" : false,
+                "portUSB" : false,
+                "tntIntegre" : false,
+                "homeCinema" : false,
+                "combiTVDvd" : false,
+                "idFrequenceUtilisation" : 3,
+                "connecteInternet" : false,
+                "ecranPlat" : false,
+                "videoRetroProjecteur" : false
+            },
+            "dateDerniereModification" : ISODate("2022-03-04T19:13:20.425+02:00")
+        }
+    ],
+    "proprietes" : {
+        "dateCreation" : ISODate("2009-12-07T01:00:00.000+02:00"),
+        "dateEntreeFoyer" : ISODate("2009-12-23T01:00:00.000+02:00"),
+        "idEtude" : 16,
+        "raisonExcCati" : [],
+        "toAnonymize" : false,
+        "prepareAnonymizationDate" : ISODate("2017-11-28T08:40:27.943+02:00"),
+        "reasonAnonymization" : "Non intégré dans le Panel de ref",
+        "anonymized" : true,
+        "anonymizationDate" : ISODate("2017-11-28T01:00:00.000+02:00")
+    },
+    "statut" : {
+        "idStatut" : 1,
+        "chuteTmp" : false
+    },
+    "typePanels" : [ 
+        1
+    ],
+    "dateDerniereModification" : ISODate("2022-03-10T13:08:27.007+02:00"),
+    "propositionSetMeter" : 0
+}
