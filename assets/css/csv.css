@@ -1,0 +1,11 @@
+.tableau {
+  width: 90%;
+  margin: auto;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}

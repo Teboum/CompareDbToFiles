@@ -3,9 +3,16 @@
   margin: auto;
 }
 
-td,
-th {
-  border: 1px solid #dddddd;
+table,
+th,
+td {
+  border: 1px solid black;
   text-align: left;
+  border-collapse: collapse;
   padding: 8px;
+}
+
+#download {
+  text-align: center;
+  margin: 10px;
 }

@@ -2,12 +2,22 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
-    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <% if(csv.length!==0){ %>
+    <% if(download) {%>
+    <form id="download" action="/main/downloadcsv" method="get">
+      <input type="hidden" name="fileName" value=<%= download %> />
+      <input
+        type="submit"
+        name="submit"
+        value="Télécharger
+      Fichier"
+      />
+    </form>
+    <%}%> <% if(csv.length!==0){ %>
     <table class="tableau">
       <tr>
         <th>IdFoyer</th>

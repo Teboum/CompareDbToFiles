@@ -48,3 +48,42 @@ exports.xmlToCsvController = (req, res, next) => {
       });
     });
 };
+
+exports.uploadXMLView = (req, res, next) => {
+  res.render("uploadcsv");
+};
+
+exports.uploadXML = (req, res, next) => {
+  const fileName = req.file.originalname.slice(
+    0,
+    req.file.originalname.length - 4
+  );
+  XMLParse(fileName)
+    .then((obj) => {
+      return objToCsv(obj, fileName);
+    })
+    .then((obj) => {
+      console.log(obj);
+      res.render("csv", {
+        csv: obj,
+        download: fileName,
+      });
+    });
+};
+
+exports.downloadCSV = (req, res, next) => {
+  console.log(req.query.fileName);
+  const file = `./statics/${req.query.fileName}.csv`;
+  res.download(file); // Set disposition and send it.
+};
+
+exports.downloadCSVJSON = (req, res) => {
+  if (req.query.json) {
+    jsonParse(req.query.json)
+      .then((obj) => objToCsv(obj, req.query.json))
+      .then(() => {
+        const file = `./statics/${req.query.json}.csv`;
+        res.download(file);
+      });
+  }
+};
